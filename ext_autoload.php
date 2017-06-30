@@ -1,5 +1,5 @@
 <?php
-$extensionClassesPath = t3lib_extMgm::extPath('gridelements_fce') . 'Classes/';
+$extensionClassesPath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('gridelements_fce') . 'Classes/';
 
 return array(
   'Inouit\gridelementsFce\Hooks\DrawItem' => $extensionClassesPath . 'Hooks/DrawItem.php',
