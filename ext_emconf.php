@@ -14,29 +14,25 @@ $EM_CONF[$_EXTKEY] = array (
 	'title' => 'Gridelements Extended for flexible content elements',
 	'description' => 'This extension provide some hooks to make flexible content elements easier with gridelements. We\'ve published a Yeoman generator to improve your development (watch documentation for more details)',
 	'category' => 'plugin',
-	'version' => '1.0.2',
+	'version' => '2.0.1',
 	'state' => 'stable',
 	'uploadfolder' => false,
 	'createDirs' => '',
 	'clearcacheonload' => true,
-	'author' => 'Grégory Copin',
+	'author' => 'Grégory Copin,Georg Nebel',
 	'author_email' => 'gcopin@inouit.com',
 	'author_company' => 'Inouit',
-	'constraints' => 
+	'constraints' =>
 	array (
-		'depends' => 
+		'depends' =>
 		array (
-			'typo3' => '6.2.0-7.9.99',
-			'php' => '5.3.0-0.0.0',
-			'cms' => '1.1.0-0.0.0',
-			'extbase' => '',
-			'fluid' => '',
-			'gridelements' => '2.0.2',
+			'typo3' => '7.6.0-7.99.99',
+			'gridelements' => '7.0.0',
 		),
-		'conflicts' => 
+		'conflicts' =>
 		array (
 		),
-		'suggests' => 
+		'suggests' =>
 		array (
 		),
 	),

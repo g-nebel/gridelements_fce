@@ -16,7 +16,7 @@ class DrawItem extends \GridElementsTeam\Gridelements\Hooks\DrawItem {
 
     // Title
     $langPrefix = 'LLL:EXT:gridelements_fce/Resources/Private/Language/locallang_db.xlf:';
-    $content = '<strong>'.$this->lang->sL($langPrefix.'flexform.CType').'</strong>'.$this->lang->sL($layoutSetup['title']);
+    $content = '<strong>'.$this->languageService->sL($langPrefix.'flexform.CType').'</strong>'.$this->languageService->sL($layoutSetup['title']);
 
     // Flexform configuration
     if(isset($layoutSetup['config']['display'])) {
@@ -56,8 +56,8 @@ class DrawItem extends \GridElementsTeam\Gridelements\Hooks\DrawItem {
 
         $grid .= '<table class="typo3-dblist">'
           .'<tr class="bgColor2">'
-          .'<td><strong>'.$this->lang->sL($langPrefix.'flexform.fieldName').'</strong></td>'
-          .'<td><strong>'.$this->lang->sL($langPrefix.'flexform.value').'</strong></td>'
+          .'<td><strong>'.$this->languageService->sL($langPrefix.'flexform.fieldName').'</strong></td>'
+          .'<td><strong>'.$this->languageService->sL($langPrefix.'flexform.value').'</strong></td>'
           .'</tr>';
 
         $i = 0;
@@ -66,7 +66,7 @@ class DrawItem extends \GridElementsTeam\Gridelements\Hooks\DrawItem {
             if(is_array($flex[$field]['el'])) {
               // section
               $grid .= '<tr class="bgColor' . ($i % 2 ? '1' : '4') . '">'
-                .'<td width="30%">' . $this->lang->sL($langPrefix.'flexform.nbItem') . '</td>'
+                .'<td width="30%">' . $this->languageService->sL($langPrefix.'flexform.nbItem') . '</td>'
                 .'<td>' . count($flex[$field]['el']) . '</td>'
                 .'</tr>';
             }else {
