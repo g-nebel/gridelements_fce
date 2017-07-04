@@ -6,5 +6,5 @@ This extension provide some hooks to make flexible content elemenents easier wit
 Requirements
 ============
 
- - Typo3 6.2 or higher
+ - Typo3 7.6 or higher
  - Gridelements typo3 extension must be installed
